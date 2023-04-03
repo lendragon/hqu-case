@@ -1,0 +1,212 @@
+#left > ul >li:nth-child(4) {
+    background-color: rgb(240,128,128);
+}
+.order {
+    box-sizing: border-box; /*防止因为padding改变而影响大小*/
+    background-color: #CECECE;
+    height: 150px;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.img_head {
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    background-image: url("../img/canteen_head.jpg");
+    float: left;
+}
+.info {
+    /*background-color: #148BE4;*/
+    height: 130px;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.window_name {
+    font-size: 30px;
+    color: black;
+}
+.canteen_name {
+    font-size: 15px;
+    background-color: #6C6C6C;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    margin :5px 0;
+}
+.main_info {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 150px;
+    bottom: 15px;
+}
+
+.order_status {
+    color: blue;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+/*查看订单详情*/
+.start_group_buy{
+    background-color:darkblue;
+    float:right;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    width:90px;
+    height:28px;
+    color:white;
+    margin-top: 100px;
+
+}
+/*订单具体信息*/
+.orderlist_info {
+    box-sizing: border-box;
+    background-color: rgb(65, 77, 101);
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    /*height: 500px;*/
+    height: 0;
+    border: none;
+    border-radius:10px 10px 0 0;
+    transition:all 1s;
+    overflow: hidden;
+    box-shadow: 2px 0px 6px 4px rgba(0, 0, 0, 0.4);
+    /*display: none;*/
+}
+
+/*订单状态（未支付，完成等）*/
+.orderlist_info_state{
+    /*background-color:yellow;*/
+    font-size:35px;
+    width:300px;
+    height:60px;
+    margin: 30px;
+    margin-bottom: 0;
+    color: white;
+    font-weight: bold;
+
+}
+/*订单的菜品信息*/
+.orderlist_info_dish {
+    font-size: 20px;
+    width: 400px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: #CECECE;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    padding:10px;
+    box-sizing:border-box;
+    margin: 20px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+/*菜品图片*/
+
+#orderlist_block {
+    width: 40%;
+    height: 70%;
+    /*background-color: #148BE4;*/
+    display: inline-block;
+    margin: 30px;
+    overflow-y: scroll;
+}
+/*订单信息*/
+.orderlist_info_content {
+    background-color: #CECECE;
+    font-size: 30px;
+    display: inline-block;
+    float: right;
+    width: 500px;
+    height: 200px;
+    border: none;
+    border-radius: 12px;
+    margin-right: 30px;
+    color: black;
+    margin-top: 175px;
+}
+
+/*退出键*/
+.exit{
+    background-color:rgb(240,128,128);
+    display:inline-block;
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:5px;
+    right:5px;
+    text-align:center;
+    border:none;
+    border-radius:25%;
+    font-size:30px;
+    color:white;
+}
+.dish_name {
+    font-size: 30px;
+    color: black;
+}
+.dish_price {
+    font-size: 25px;
+    color: darkred;
+    margin-top: 55px;
+}
+.count{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+}
+.count>p{
+    color:black;
+    font-size:25px;
+    margin:5px;
+}
+#order_other {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 500px;
+    height: 200px;
+}
+.orderlist_window_name {
+    font-size: 50px;
+    color: white;
+}
+#option {
+    text-align: center;
+    /*background-color: #6C6C6C;*/
+}
+#option > button {
+    font-size: 20px;
+    display: inline-block;
+    margin: 30px;
+    background-color: unset;
+    border: none;
+    outline: none;
+    color: white;
+}
+#option i {
+    font-size: 50px;
+    border: solid 1px rgb(240,128,128);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    color: rgb(240,128,128);
+    background-color: white;
+
+}

@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+
+}
+.item {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+
+    display: flex;
+    border-bottom: solid #BBBBBB 2px;
+}
+i {
+    margin: auto;
+}
+#main {
+    width: 500px;
+    height: 650px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+.main_top {
+    background-color: #148BE4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.main_bottom {
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    display: flex;
+
+}
+.main_top > p {
+    font-size: 40px;
+    color: white;
+    margin: auto;
+}
+#sub {
+    background-color: #148BE4;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+#sub:hover {
+    background-color: #33b4de;
+}
+input[type="text"], input[type="password"] {
+    font-size: 14px;
+    border: none;
+    border-bottom: #BBBBBB solid 2px;
+    height: 60px;
+    width: 320px;
+    float: right;
+}
+input:focus, button:focus {
+    outline: none;
+}
+input:hover {
+    background-color: #EEE;
+}
+.login {
+    width: 380px;
+    /*background-color: aqua;*/
+    margin: auto;
+}
+
+select {
+    font-size: 16px;
+    border: solid 1px #BBBBBB;
+    height: 50px;
+    width: 100px;
+    border-radius: 7px;
+    margin: 50px 100% 50px 0;
+}
+hr {
+    border-top: solid 2px #BBBBBB;
+    height: 0;
+    margin-bottom: 50px;
+}
+
+.other {
+    float: right;
+    margin-right: 20px;
+}

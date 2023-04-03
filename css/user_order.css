@@ -1,0 +1,54 @@
+.canteen {
+    box-sizing: border-box; /*防止因为padding改变而影响大小*/
+    background-color: #CECECE;
+    height: 150px;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+.img_head {
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    background-image: url("../img/canteen_head.jpg");
+    float: left;
+}
+.info {
+    /*background-color: #148BE4;*/
+    height: 130px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.window_name {
+    font-size: 30px;
+    color: black;
+}
+
+.canteen_name {
+    font-size: 15px;
+    background-color: #6C6C6C;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    margin :5px 0;
+}
+#left > ul >li:nth-child(2) {
+    background-color: rgb(240,128,128);
+}
+
+.start_group_buy{
+    background-color:darkblue;
+    float:right;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    width:90px;
+    height:28px;
+    color:white;
+    margin-top: 100px;
+
+}

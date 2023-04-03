@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #333B49;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: white;
+}
+#top {
+    box-sizing: border-box;
+    border-bottom: solid #BBBBBB 2px;
+    background-color: #333B49;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    position: relative;
+    /*position: fixed;*/
+}
+#top > p {
+    font-size: 35px;
+    margin: auto 30px;
+}
+#left {
+    background-color: #333B49;
+    height: 80%;
+    width: 300px;
+    float: left;
+    overflow: hidden;
+    /*position: fixed;*/
+}
+#left li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+}
+#left li:hover {
+    background-color: #9A9A9A;
+
+}
+li > a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-left: 20px;
+
+}
+
+a {
+    color: white;
+    text-decoration:none;
+
+}
+#main{
+    box-sizing: border-box; /*防止因为padding改变而影响大小*/
+    background-color: rgb(98,111,128);
+    height: 80%;
+    padding: 80px;
+    overflow-y: scroll;
+}
+#main > div{
+    /*background-color: #BBBBBB;*/
+    width: 100%;
+    font-size: 0;
+}
+#user_info_block {
+    position: absolute;
+    right: 100px;
+    top: 30px;
+}
+#head { /*头像*/
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+    border: solid 5px rgb(240,128,128);
+    border-radius: 5px;
+}
+#user_info_block > p {
+    float: right;
+}

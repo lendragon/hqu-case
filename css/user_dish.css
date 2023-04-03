@@ -1,0 +1,216 @@
+.dish {
+    box-sizing: border-box; /*防止因为padding改变而影响大小*/
+    background-color: #CECECE;
+    height: 150px;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    position:relative;
+}
+.img_head {
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    background-image: url("../img/canteen_head.jpg");
+    float: left;
+}
+.info {
+    /*background-color: #148BE4;*/
+    height: 130px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.dish_name {
+    font-size: 30px;
+    color: black;
+}
+.dish_price {
+    font-size: 25px;
+    color: darkred;
+    margin-top: 55px;
+}
+#left > ul >li:nth-child(2) {
+    background-color: rgb(240,128,128);
+}
+.btn{
+    font-size: 30px;
+    background-color:darkblue;
+    border:none;
+    border-radius:50%;
+    width:35px;
+    height:35px;
+    color:white;
+    display:inline-block;
+}
+.btn:first-child{
+    background-color:grey;
+}
+.count{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+}
+.count>p{
+    color:black;
+    font-size:30px;
+    display:inline-block;
+    margin:0 10px;
+    width:30px;
+}
+#cart {
+    background-color: #CECECE;
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+#cart > p {
+    color: darkred;
+    font-size: 20px;
+    margin: 20px auto;
+}
+#cart_item {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    position: relative;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    background-color: white;
+}
+#cart_item i {
+    color: darkorange;
+    font-size: 60px;
+    transition: 0.3s font-size;
+    margin: auto;
+}
+#cart_item>button {
+    background-color: unset;
+    border: none;
+    margin: 0 auto;
+}
+#settlement {
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+    padding: 5px;
+}
+#red_point {
+    height: 0;
+    width: 0;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    right: -5px;
+    top:-5px;
+    transition: 0.3s all;
+}
+
+#cart_detail {
+    background-color: #818181;
+    height: 80%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px 0 0 20px;
+    border: solid 4px #333b49;
+    box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    width: 0;
+    overflow-y: scroll;
+    transition: 0.5s width;
+}
+
+.dishes_in_cart {
+    box-sizing: border-box; /*防止因为padding改变而影响大小*/
+    background-color: #CECECE;
+    height: 150px;
+    width: 75%;
+    margin: 30px 0 2% 30px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    position:relative;
+    overflow: hidden;
+}
+
+#QRcode_block {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+#QRcode{
+    width: 300px;
+    height: 300px;
+    margin: 70px auto;
+    background-color: black;
+    background-image: url("../img/QRcode.png");
+    background-size: 100%;
+}
+
+#QRcode_block > p {
+    font-size: 40px;
+    color: black;
+
+}
+
+.quit {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: darkblue;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+#outter {
+    background-color: gray;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+#settle {
+    border: none;
+    outline: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+}

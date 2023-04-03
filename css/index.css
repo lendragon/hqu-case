@@ -1,0 +1,15 @@
+.check_keep {
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+}
+.error {
+    color: red;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+#form {
+    position: relative;
+}

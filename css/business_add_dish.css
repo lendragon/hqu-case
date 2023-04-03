@@ -1,0 +1,202 @@
+body{
+    overflow:hidden;
+}
+.dish {
+    box-sizing: border-box; /*防止因为padding改变而影响大小*/
+    background-color: #404d65;
+    height: 150px;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.img_head {
+    width: 130px;
+    height: 130px;
+    background-size: 100%;
+    background-image: url("../img/canteen_head.jpg");
+    float: left;
+}
+.img_upload {
+    width: 180px;
+    height: 180px;
+    background-size: 100%;
+    float: left;
+    background-color: white;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    top: 20px;
+    left: 20px;
+}
+.info {
+    /*background-color: #148BE4;*/
+    height: 130px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.window_name {
+    font-size: 30px;
+    color: black;
+    display:inline-block;
+}
+.canteen_name {
+    font-size: 15px;
+    background-color: #6C6C6C;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    margin :5px 0;
+}
+#left > ul >li:nth-child(2) {
+    background-color: lightcoral;
+}
+.btn{
+    font-size: 30px;
+    background-color:darkblue;
+    border:none;
+    border-radius:50%;
+    width:35px;
+    height:35px;
+    color:white;
+    display:inline-block;
+}
+.btn:first-child{
+    background-color:grey;
+}
+.btn_r {
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: white;
+    display: inline-block;
+    background-color: rgb(240,128,128);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.count{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+}
+.count>p{
+    color:black;
+    font-size:30px;
+    display:inline-block;
+    margin:0 10px;
+    width:30px;
+}
+/*查看订单详情*/
+.show_ordermsg{
+    background-color:darkblue;
+    float:right;
+    margin-left:120px;
+    margin-top:5px;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    width:90px;
+    height:28px;
+    color:white;
+}
+/*订单具体信息*/
+.orderlist_info {
+    background-color: #534d64;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+    height: 500px;
+    border:none;
+    border-radius:10px;
+    transition:all 1s;
+}
+
+/*订单状态（未支付，完成等）*/
+.orderlist_info_state{
+    background-color:yellow;
+    font-size:35px;
+    margin-top:10px;
+    margin-left:20px;
+    width:300px;
+    height:60px;
+    color:red;
+}
+/*订单的菜品信息*/
+.orderlist_info_dish {
+    font-size: 20px;
+    margin-top:40px;
+    margin-left:20px;
+    width: 400px;
+    height: 130px;
+    border: none;
+    border-radius: 10px;
+    background-color: #CECEDF;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    padding:10px;
+    box-sizing:border-box;
+}
+/*菜品图片*/
+.orderlist_info_dish_img{
+    background-color:darkgray;
+    position:relative;
+    float:left;
+    height:110px;
+    width:110px;
+    border:none;
+    border-radius:8px;
+    display:inline-block;
+}
+/*菜品价格*/
+.orderlist_info_dish_price{
+    color:black;
+    display:inline-block;
+    float:right;
+    margin-top:82px;
+    font-size:20px;
+    height:20px;
+    width:150px;
+}
+/*订单信息*/
+.orderlist_info_content {
+    background-color: #CEC4DF;
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    width: 400px;
+    height: 350px;
+    border: none;
+    border-radius: 12px;
+}
+
+/*退出键*/
+.exit{
+    background-color:darkred;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:5px;
+    right:5px;
+    text-align:center;
+    border:none;
+    border-radius:25%;
+    font-size:30px;
+    color:white;
+}
+#input_name {
+    height:35px;width:350px;border:none;border-radius:10px;position:absolute;right:-250px;top:55px;
+}
+#input_price {
+    height: 35px; width: 350px; margin: 15px 0; border: none; border-radius: 10px;position:absolute; right: -250px; top: 107px
+}
